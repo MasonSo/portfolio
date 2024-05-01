@@ -1,0 +1,395 @@
+/* --------------------------home-page start-------------------------------------*/
+*{
+  padding: 0;
+  margin: 0;
+}
+  
+ .exo-2 {
+    font-family: "Exo 2", sans-serif;
+  }
+
+  .montserrat{
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  
+  
+  .font-title h1 {
+    font-family: "Exo 2", sans-serif;
+    font-size: 8vw;
+    z-index: 2;
+     color: white;
+     background-color: transparent;
+     margin: 0;
+     margin-top: 25vh;
+     padding-bottom: 1vw;
+  }
+  
+  .font-text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5vw;
+    z-index: 2;
+     color: white;
+  }
+  
+  .font-text-button {
+    font-family: "Exo 2", sans-serif;
+    font-size: 2.5vw;
+     background-color: transparent;
+      border: none;
+    /* cursor: none; */
+    z-index: 2;
+    color: white;
+  }
+  
+  .font-text-button:hover {
+    font-family: "Exo 2", sans-serif;
+     background-color: transparent;
+      border: none;
+    /* cursor: none; */
+    z-index: 2;
+    color: #B46005;
+  }
+  
+  .font-text-button:hover::after {
+     content: "!";
+  }
+ 
+  .menu-container{
+    padding-top: 5vh;
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+    position: fixed;
+   }
+  
+  .name-container {
+    padding-left: 3vw;
+    display: flex;
+    flex-direction: column;
+    width: 45vw;
+    height: 100vh;
+  }
+
+  .logo{
+    position: fixed;
+    bottom: 2vh;
+    left: 50vw;
+    max-width: 8vw; 
+    max-height: 8vh;
+    transform: translate(-50%, -50%);
+
+}
+  
+  #circular-button {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 9vw; /* Adjust button size */
+    height: 10vh; /* Adjust button size */
+    border-radius: 50%; /* Make it circular */
+    background-color: transparent; /* Button background color */
+    color: #ffffff; /* Text color */
+    border: none; /* Remove border */
+     /* cursor: none; */
+  }  
+  
+  
+  .hidden {
+    display: none; /* Hide the text initially */
+  }
+  
+  
+  .visible {
+     display: flex; /* Show the text when 'visible' class is applied */
+    animation: fadeIn;
+      animation-duration: 1s; /* Animation duration */
+    animation-timing-function: ease; /* Timing function */
+    animation-iteration-count: forwards; /* Apply the fade-in animation */
+  }
+  
+  .visible1 {
+    display: flex;
+    animation: fadeIn;
+      animation-duration: 1s; /* Animation duration */
+    animation-timing-function: ease; /* Timing function */
+    animation-iteration-count: forwards; /* Apply the fade-in animation */ 
+  }
+  
+  .visible2 {
+    display: flex;
+    animation: fadeIn;
+      animation-duration: 1s; /* Animation duration */
+    animation-timing-function: ease; /* Timing function */
+    animation-iteration-count: forwards; /* Apply the fade-in animation */ 
+  }
+  
+  .visible3 {
+    display: flex;
+    animation: fadeIn;
+      animation-duration: 1s; /* Animation duration */
+    animation-timing-function: ease; /* Timing function */
+    animation-iteration-count: forwards; /* Apply the fade-in animation */ }
+
+  
+  
+  /* --------------------------works------------------------------------*/
+
+  .wfont-text-button {
+    font-family: "Exo 2", sans-serif;
+    font-size: 2vw;
+     background-color: transparent;
+      border: none;
+    /* cursor: none; */
+    z-index: 2;
+    color: white;
+  }
+  
+  .wfont-text-button:hover, .wfont-text-button.active {
+    font-family: "Exo 2", sans-serif;
+     background-color: transparent;
+      border: none;
+    /* cursor: none; */
+    z-index: 2;
+    color: #B46005;
+  }
+  
+  .wfont-text-button:hover::after {
+    content: "!";
+  }
+  
+  .wfont-title {
+    font-family: "Exo 2", sans-serif;
+    font-size: 5vw;
+    z-index: 2;
+    color: white;
+    background-color: transparent;
+  }
+  
+  .wmenu-container {
+    opacity: 0;
+    position: fixed;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+    z-index: 3;
+    animation: cfadeIn;
+   animation-duration: 1s; /* Animation duration */
+   animation-fill-mode: forwards;
+   animation-delay: 1s;
+  }
+  
+  .wcontainer {
+    opacity: 0;
+    width: 90vw;
+    margin: auto;
+    padding: 1vw 0;
+    animation: cfadeIn;
+   animation-duration: 1s; /* Animation duration */
+   animation-fill-mode: forwards;
+  }
+  
+  .wphoto-gallery{
+    padding-top: 20vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .wcolumn {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+  }
+  
+  .wtext-overlay {
+    position: absolute;
+    font-family: "Exo 2", sans-serif;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: transparent;
+    font-size: 1.5vw;
+    padding: 1vw;
+    display: none;
+  }
+
+    .wphoto {
+      position: relative;
+      padding: 1vw;
+      max-width: 40vw; /* Adjust the maximum width of the images */
+      text-align: center; /* Center the text overlay */
+    }
+  
+  .wphoto:hover .wtext-overlay {
+    display: block;
+  }
+
+  .wphoto img {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Prevent any extra space below the image */
+  }
+  
+  .wphoto:hover img {
+    animation: fadeOut 0.3s forwards;
+  }
+
+  @media (max-width: 50vw) {
+    .wphoto-gallery {
+      flex-direction: column;
+    }
+  }
+
+
+ /* --------------------------contact------------------------------------*/
+
+ .cflex{
+  display: flex;
+flex-direction: row;
+ }
+ 
+ .ccontainer{
+  padding-top: 30vh;
+  padding-left: 12vw;
+  width: 30vw;
+  height: 100vh;
+  display: flex;
+flex-direction: column;
+
+ }
+
+ .cfont-header{
+  opacity: 0;
+  position: absolute;
+  top: 10%; /* Adjust the top position as needed */
+  left: 35%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3vw;
+  z-index: 2;
+   color: white;
+   animation: cfadeIn;
+   animation-duration: 1s; /* Animation duration */
+   animation-fill-mode: forwards;
+}
+
+ .cfont-text {
+  opacity: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5vw;
+  z-index: 2;
+   color: white;
+   padding: 3vh;
+   animation: cfadeIn;
+   animation-duration: 1s; /* Animation duration */
+   animation-fill-mode: forwards;
+ animation-delay: 1s;
+}
+
+.cfont-text a {
+  color: white; 
+  
+  
+}
+
+.cfont-text a:hover {
+  color: #B46005;
+}
+
+.cfont-text a:hover::after{
+  content: "!";
+}
+
+.cfont-text-button {
+  font-family: "Exo 2", sans-serif;
+  font-size: 2.5vw;
+   background-color: transparent;
+    border: none;
+  /* cursor: none; */
+  z-index: 2;
+  color: white;
+}
+
+.cfont-text-button:hover {
+  font-family: "Exo 2", sans-serif;
+   background-color: transparent;
+    border: none;
+  /* cursor: none; */
+  z-index: 2;
+  color: #B46005;
+}
+
+.cfont-text-button:hover::after {
+   content: "!";
+}
+
+
+  /* --------------------------back button------------------------------------*/
+.back-button{
+  opacity: 0;
+  position: fixed;
+  top: 50%; 
+  left: 7%; 
+  transform: translateX(-50%);
+  font-family: "Exo 2", sans-serif;
+  font-size: 1.5vw;
+   background-color: #3c3c3c;
+   padding: 1vw;
+    border: none;
+  z-index: 3;
+  color: white;
+  border-radius: 5vw;
+  animation: cfadeIn;
+  animation-duration: 1s; /* Animation duration */
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+
+.back-button:hover {
+  color: #B46005;
+  background-color: white;
+}
+
+.back-button:hover::after {
+  content: "!";
+}
+  /* --------------------------keyframes------------------------------------*/
+
+@keyframes fadeIn {
+  0%{
+      opacity: 0;
+    }
+  100%{
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.09;
+    }
+  }  
+
+  @keyframes cfadeIn {
+    0%{
+        opacity: 0;
+      }
+    100%{
+        opacity: 1;
+      }
+    }
+  
+  
+
+
+  

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/addons/p5.sound.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Bungee&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:wght@300&family=Platypi:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      /* cursor: none; */
+      background-color: black;
+    }
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -2;
+    }
+  </style>
+</head>
+<body>
+  <div class="wmenu-container">
+  <button class="wfont-text-button" onclick="showPhotos('3D')">3D</button>
+  <button class="wfont-text-button" onclick="showPhotos('Codefolio')">Codefolio</button>
+  <button class="wfont-text-button" onclick="showPhotos('video')">Video</button>
+  <button class="wfont-text-button" onclick="showPhotos('misc')">Misc</button>
+</div>
+
+<div class="wcontainer">
+  <div class="wphoto-gallery" id="photoGallery">
+    <div class="wphoto">
+      <img src="projects/the desire of a morphing body.png" alt="3D Photo 1">
+      <div class="wtext-overlay">The Desire of a Morphing Body</div>
+    </div>
+    <div class="wphoto">
+      <img src="projects/re-bloom.png" alt="3D Photo 2">
+      <div class="wtext-overlay">RE_BLOOM</div>
+    </div>
+    <div class="wphoto">
+      <img src="projects/vampire bar.png" alt="3D Photo 3">
+      <div class="wtext-overlay">Vampire Bar</div>
+    </div>
+    <a href="https://burnout-mws.glitch.me/">
+    <div class="wphoto">
+      <img src="projects/burnout.png" alt="Codefolio Photo 1">
+      <div class="wtext-overlay">Burnout</div>
+    </div>
+    </a>
+    <a href="https://within-my-box-mws.glitch.me">
+      <div class="wphoto">
+        <img src="projects/Within My Box.png" alt="Codefolio Photo 2">
+        <div class="wtext-overlay">Within My Box</div>
+      </div>
+      </a>
+      <div class="wphoto">
+        <img src="projects/alone:growth.png" alt="Codefolio Photo 3">
+        <div class="wtext-overlay">alone:growth</div>
+      </div>
+    <div class="wphoto">
+      <img src="projects/oldboy recreation.png" alt="Video Photo 1">
+      <div class="wtext-overlay">Oldboy Scene Recreation</div>
+    </div> 
+    <div class="wphoto">
+      <img src="projects/sense of home.JPG" alt="Misc Photo 1">
+      <div class="wtext-overlay">Sense of Home</div>
+    </div>
+ 
+ 
+  </div>
+  </div>
+</div>
+
+<script src="works.js"></script>
+<button class="back-button" onclick="window.location.href = 'index.html';">back</button>
+
+</body>
+</html>
